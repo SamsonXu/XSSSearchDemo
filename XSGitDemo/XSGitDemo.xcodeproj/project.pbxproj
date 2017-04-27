@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		735395801EB1E3A3001EF92C /* ChineseInclude.m in Sources */ = {isa = PBXBuildFile; fileRef = 7353956F1EB1E3A3001EF92C /* ChineseInclude.m */; };
+		735395811EB1E3A3001EF92C /* ChineseToPinyinResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 735395711EB1E3A3001EF92C /* ChineseToPinyinResource.m */; };
+		735395821EB1E3A3001EF92C /* HanyuPinyinOutputFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 735395731EB1E3A3001EF92C /* HanyuPinyinOutputFormat.m */; };
+		735395831EB1E3A3001EF92C /* NSString+PinYin4Cocoa.m in Sources */ = {isa = PBXBuildFile; fileRef = 735395751EB1E3A3001EF92C /* NSString+PinYin4Cocoa.m */; };
+		735395841EB1E3A3001EF92C /* PinyinFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 735395771EB1E3A3001EF92C /* PinyinFormatter.m */; };
+		735395851EB1E3A3001EF92C /* PinYinForObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 735395791EB1E3A3001EF92C /* PinYinForObjc.m */; };
+		735395861EB1E3A3001EF92C /* PinyinHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 7353957B1EB1E3A3001EF92C /* PinyinHelper.m */; };
+		735395871EB1E3A3001EF92C /* unicode_to_hanyu_pinyin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 7353957C1EB1E3A3001EF92C /* unicode_to_hanyu_pinyin.txt */; };
 		7355F2A61EA862B5007DDEBC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7355F2A51EA862B5007DDEBC /* main.m */; };
 		7355F2A91EA862B5007DDEBC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7355F2A81EA862B5007DDEBC /* AppDelegate.m */; };
 		7355F2AC1EA862B5007DDEBC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7355F2AB1EA862B5007DDEBC /* ViewController.m */; };
@@ -47,6 +55,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7353956E1EB1E3A3001EF92C /* ChineseInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseInclude.h; sourceTree = "<group>"; };
+		7353956F1EB1E3A3001EF92C /* ChineseInclude.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseInclude.m; sourceTree = "<group>"; };
+		735395701EB1E3A3001EF92C /* ChineseToPinyinResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseToPinyinResource.h; sourceTree = "<group>"; };
+		735395711EB1E3A3001EF92C /* ChineseToPinyinResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseToPinyinResource.m; sourceTree = "<group>"; };
+		735395721EB1E3A3001EF92C /* HanyuPinyinOutputFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HanyuPinyinOutputFormat.h; sourceTree = "<group>"; };
+		735395731EB1E3A3001EF92C /* HanyuPinyinOutputFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HanyuPinyinOutputFormat.m; sourceTree = "<group>"; };
+		735395741EB1E3A3001EF92C /* NSString+PinYin4Cocoa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+PinYin4Cocoa.h"; sourceTree = "<group>"; };
+		735395751EB1E3A3001EF92C /* NSString+PinYin4Cocoa.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+PinYin4Cocoa.m"; sourceTree = "<group>"; };
+		735395761EB1E3A3001EF92C /* PinyinFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinFormatter.h; sourceTree = "<group>"; };
+		735395771EB1E3A3001EF92C /* PinyinFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinFormatter.m; sourceTree = "<group>"; };
+		735395781EB1E3A3001EF92C /* PinYinForObjc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinYinForObjc.h; sourceTree = "<group>"; };
+		735395791EB1E3A3001EF92C /* PinYinForObjc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinYinForObjc.m; sourceTree = "<group>"; };
+		7353957A1EB1E3A3001EF92C /* PinyinHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinyinHelper.h; sourceTree = "<group>"; };
+		7353957B1EB1E3A3001EF92C /* PinyinHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinyinHelper.m; sourceTree = "<group>"; };
+		7353957C1EB1E3A3001EF92C /* unicode_to_hanyu_pinyin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unicode_to_hanyu_pinyin.txt; sourceTree = "<group>"; };
 		7355F2A11EA862B5007DDEBC /* XSGitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSGitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7355F2A51EA862B5007DDEBC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7355F2A71EA862B5007DDEBC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -120,6 +143,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7353956D1EB1E3A3001EF92C /* PinYin */ = {
+			isa = PBXGroup;
+			children = (
+				7353956E1EB1E3A3001EF92C /* ChineseInclude.h */,
+				7353956F1EB1E3A3001EF92C /* ChineseInclude.m */,
+				735395701EB1E3A3001EF92C /* ChineseToPinyinResource.h */,
+				735395711EB1E3A3001EF92C /* ChineseToPinyinResource.m */,
+				735395721EB1E3A3001EF92C /* HanyuPinyinOutputFormat.h */,
+				735395731EB1E3A3001EF92C /* HanyuPinyinOutputFormat.m */,
+				735395741EB1E3A3001EF92C /* NSString+PinYin4Cocoa.h */,
+				735395751EB1E3A3001EF92C /* NSString+PinYin4Cocoa.m */,
+				735395761EB1E3A3001EF92C /* PinyinFormatter.h */,
+				735395771EB1E3A3001EF92C /* PinyinFormatter.m */,
+				735395781EB1E3A3001EF92C /* PinYinForObjc.h */,
+				735395791EB1E3A3001EF92C /* PinYinForObjc.m */,
+				7353957A1EB1E3A3001EF92C /* PinyinHelper.h */,
+				7353957B1EB1E3A3001EF92C /* PinyinHelper.m */,
+				7353957C1EB1E3A3001EF92C /* unicode_to_hanyu_pinyin.txt */,
+			);
+			path = PinYin;
+			sourceTree = "<group>";
+		};
 		7355F2981EA862B5007DDEBC = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +246,7 @@
 		7355F3031EA88656007DDEBC /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				7353956D1EB1E3A3001EF92C /* PinYin */,
 				7355F3041EA886AF007DDEBC /* Masonry */,
 			);
 			path = Library;
@@ -343,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				735395871EB1E3A3001EF92C /* unicode_to_hanyu_pinyin.txt in Resources */,
 				7355F2B41EA862B5007DDEBC /* LaunchScreen.storyboard in Resources */,
 				7355F2B11EA862B5007DDEBC /* Assets.xcassets in Resources */,
 				7355F2AF1EA862B5007DDEBC /* Main.storyboard in Resources */,
@@ -370,6 +417,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				735395861EB1E3A3001EF92C /* PinyinHelper.m in Sources */,
 				7355F31D1EA886AF007DDEBC /* MASConstraint.m in Sources */,
 				7355F3201EA886AF007DDEBC /* MASViewAttribute.m in Sources */,
 				7355F3221EA886AF007DDEBC /* NSArray+MASAdditions.m in Sources */,
@@ -378,12 +426,18 @@
 				7355F31F1EA886AF007DDEBC /* MASLayoutConstraint.m in Sources */,
 				7355F2AC1EA862B5007DDEBC /* ViewController.m in Sources */,
 				7355F2DB1EA863A9007DDEBC /* MyControl.m in Sources */,
+				735395851EB1E3A3001EF92C /* PinYinForObjc.m in Sources */,
 				7355F3241EA886AF007DDEBC /* View+MASAdditions.m in Sources */,
 				7355F31C1EA886AF007DDEBC /* MASCompositeConstraint.m in Sources */,
+				735395831EB1E3A3001EF92C /* NSString+PinYin4Cocoa.m in Sources */,
 				7355F3231EA886AF007DDEBC /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				735395811EB1E3A3001EF92C /* ChineseToPinyinResource.m in Sources */,
+				735395821EB1E3A3001EF92C /* HanyuPinyinOutputFormat.m in Sources */,
 				7355F31E1EA886AF007DDEBC /* MASConstraintMaker.m in Sources */,
+				735395841EB1E3A3001EF92C /* PinyinFormatter.m in Sources */,
 				7355F2A91EA862B5007DDEBC /* AppDelegate.m in Sources */,
 				7355F2A61EA862B5007DDEBC /* main.m in Sources */,
+				735395801EB1E3A3001EF92C /* ChineseInclude.m in Sources */,
 				7355F2E11EA87FF9007DDEBC /* InfoModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,6 +674,7 @@
 				7355F2D01EA862B5007DDEBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7355F2D11EA862B5007DDEBC /* Build configuration list for PBXNativeTarget "XSGitDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -628,6 +683,7 @@
 				7355F2D31EA862B5007DDEBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7355F2D41EA862B5007DDEBC /* Build configuration list for PBXNativeTarget "XSGitDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -636,6 +692,7 @@
 				7355F2D61EA862B5007DDEBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

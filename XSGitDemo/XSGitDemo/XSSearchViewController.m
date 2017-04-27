@@ -10,6 +10,8 @@
 #import "MyControl.h"
 #import "Define.h"
 #import "InfoModel.h"
+#import "ChineseInclude.h"
+#import "PinYinForObjc.h"
 
 #define BtnTextColor KColorRGB(230, 113, 62)
 @interface XSSearchViewController ()<UITableViewDelegate,UITableViewDataSource,UISearchBarDelegate>
@@ -246,9 +248,8 @@ typedef NS_ENUM(NSInteger,DateType) {
      但是在数据较多的情况下，一般我们通过获取searchBar上的文字，向后台发送搜索字段，接收后台返回的数据再进行数据的呈现。
     */
     
-    NSInteger strLength = _queryText.length;
     /** 搜索字段为空时，显示所有数据*/
-    if (strLength == 0) {
+    if (_queryText.length == 0) {
         
         for (InfoModel *model in self.dataArray) {
         
@@ -262,14 +263,44 @@ typedef NS_ENUM(NSInteger,DateType) {
         return;
     }
     
-    /** 搜索条件不为空时，便利数据进行筛选*/
-    for (InfoModel *model in self.dataArray) {
+    /** 搜索条件不为空时，遍历数据进行筛选*/
+    
+    /**搜索字段为拼音时对数据进行遍历：
+     1、数据内容也为中文-——》讲中文字符串进行转换，然后与搜索字段进行比较
+     2、数据内容为拼音--》直接对字符串进行比较
+     注：应不区分大小写
+     */
+    if (_queryText.length > 0 && ![ChineseInclude isIncludeChineseInString:_queryText]) {
         
-        NSString *tempStr = [model.infoText substringToIndex:strLength];
-        if ([tempStr isEqualToString:_queryText] && (model.infoType == _type || _type == DateTypeAll)) {
-            [_resultArray addObject:model];
+        for (InfoModel *model in _dataArray) {
+            
+            if ([ChineseInclude isIncludeChineseInString:model.infoText]) {
+                NSString *tempStr = [PinYinForObjc chineseConvertToPinYin:model.infoText];
+                
+                NSRange range = [tempStr rangeOfString:_queryText options:NSCaseInsensitiveSearch];
+                if (range.length > 0) {
+                    [_resultArray addObject:model];
+                }
+            }else{
+                NSRange range = [model.infoText rangeOfString:_queryText options:NSCaseInsensitiveSearch];
+                if (range.length > 0) {
+                    [_resultArray addObject:model];
+                }
+            }
+            
+        }
+    }else{/** 搜索字段为汉字时直接进行字符串比较*/
+        
+        for (InfoModel *model in self.dataArray) {
+            
+            NSRange range = [model.infoText rangeOfString:_queryText options:NSCaseInsensitiveSearch];
+            if (range.length > 0 && (model.infoType == _type || _type == DateTypeAll)) {
+                [_resultArray addObject:model];
+            }
         }
     }
+    
+    
     
     [_tableView reloadData];
     _popView.hidden = YES;
